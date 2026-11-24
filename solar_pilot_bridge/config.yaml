@@ -1,5 +1,5 @@
 name: Solar Pilot Bridge
-version: 0.1.0
+version: 0.1.1
 slug: solar_pilot_bridge
 description: Connects Home Assistant to your Solar Pilot mode queue. Runs only the scripts you map here.
 url: https://github.com/roshancherry/solarpilot-e

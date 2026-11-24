@@ -93,6 +93,7 @@ def load_options():
 def http(method, url, headers=None, payload=None, timeout=20):
     body = json.dumps(payload).encode() if payload is not None else None
     req = urllib.request.Request(url, data=body, method=method)
+    req.add_header('user-agent', 'SolarPilotBridge/0.1.1')
     req.add_header('content-type', 'application/json')
     for k, v in (headers or {}).items():
         req.add_header(k, v)
